@@ -1,0 +1,201 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+/* Header */
+header{
+    background:#2c3e50;
+    color:white;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.logo h1{
+    font-size:30px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    color:#f1c40f;
+}
+
+/* Hero Section */
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(to right,#3498db,#8e44ad);
+    color:white;
+}
+
+.hero h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    background:#f1c40f;
+    color:black;
+    padding:12px 25px;
+    border-radius:5px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#f39c12;
+}
+
+/* Featured Books */
+.featured-books{
+    padding:60px 8%;
+}
+
+.featured-books h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:35px;
+}
+
+.book-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.book-card{
+    width:280px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    text-align:center;
+    padding:20px;
+}
+
+.book-card img{
+    width:180px;
+    height:240px;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.book-card h3{
+    margin:10px 0;
+}
+
+.book-card p{
+    font-size:20px;
+    color:#27ae60;
+    margin-bottom:15px;
+}
+
+.book-card button{
+    background:#3498db;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.book-card button:hover{
+    background:#2980b9;
+}
+
+/* Categories */
+.categories{
+    background:white;
+    padding:60px 8%;
+}
+
+.categories h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:35px;
+}
+
+.category-list{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.category{
+    background:#3498db;
+    color:white;
+    padding:15px 25px;
+    border-radius:8px;
+    font-size:18px;
+}
+
+/* Footer */
+footer{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+    margin-top:15px;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.hero h2{
+    font-size:30px;
+}
+
+.book-card{
+    width:90%;
+}
+
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Online Book Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>📚 Online Book Store</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html" class="active">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Register Form -->
+    <section class="featured-books">
+        <div class="checkout-form">
+            <h2 style="text-align:center;">Create an Account</h2>
+            <br>
+
+            <form action="login.html">
+
+                <label>Full Name</label>
+                <input type="text" id="fullName" placeholder="Enter your full name" required>
+
+                <br><br>
+
+                <label>Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <br><br>
+
+                <label>Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+                <br><br>
+
+                <label>Create Password</label>
+                <input type="password" id="password" placeholder="Create a password" required>
+
+                <br><br>
+
+                <label>Confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+
+                <br><br>
+
+                <button type="button" class="btn" onclick="registerUser()">Register</button>
+
+                <br><br>
+
+                <p style="text-align:center;">
+                    Already have an account?
+                    <a href="login.html">Login Here</a>
+                </p>
+
+            </form>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Online Book Store | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

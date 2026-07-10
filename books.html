@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - Online Book Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>📚 Online Book Store</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html" class="active">Books</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Books Section -->
+    <section class="featured-books">
+        <h2>Available Books</h2>
+
+        <div class="book-container" id="bookContainer">
+</div>
+
+            <div class="book-card">
+                <img src="images/book1.jpg" alt="Python Programming">
+                <h3>Python Programming</h3>
+                <p>₹499</p>
+                <p>⭐⭐⭐⭐⭐</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="book-card">
+                <img src="images/book2.jpg" alt="Java Programming">
+                <h3>Java Programming</h3>
+                <p>₹599</p>
+                <p>⭐⭐⭐⭐☆</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="book-card">
+                <img src="images/book3.jpg" alt="Web Development">
+                <h3>Web Development</h3>
+                <p>₹699</p>
+                <p>⭐⭐⭐⭐⭐</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="book-card">
+                <img src="images/book4.jpg" alt="Data Structures">
+                <h3>Data Structures</h3>
+                <p>₹549</p>
+                <p>⭐⭐⭐⭐☆</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="book-card">
+                <img src="images/book5.jpg" alt="Machine Learning">
+                <h3>Machine Learning</h3>
+                <p>₹899</p>
+                <p>⭐⭐⭐⭐⭐</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="book-card">
+                <img src="images/book6.jpg" alt="Cyber Security">
+                <h3>Cyber Security</h3>
+                <p>₹799</p>
+                <p>⭐⭐⭐⭐☆</p>
+                <button>Add to Cart</button>
+            </div>
+            <button onclick="addToCart('Python Programming',499)">Add to Cart</button>
+
+        </div>
+    </section>
+    <div style="text-align:center; margin:20px;">
+    <input
+        type="text"
+        id="searchBox"
+        placeholder="Search books..."
+        onkeyup="searchBooks()"
+        style="padding:10px; width:300px; font-size:16px;">
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Online Book Store | All Rights Reserved</p>
+    </footer>
+
+    <script src="js/books.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Online Book Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>📚 Online Book Store</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html" class="active">Checkout</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Checkout Form -->
+    <section class="featured-books">
+        <h2>Checkout</h2>
+
+        <form class="checkout-form">
+
+            <label>Full Name</label><br>
+            <input type="text" placeholder="Enter your full name" required><br><br>
+
+            <label>Email Address</label><br>
+            <input type="email" placeholder="Enter your email" required><br><br>
+
+            <label>Phone Number</label><br>
+            <input type="tel" placeholder="Enter your phone number" required><br><br>
+
+            <label>Delivery Address</label><br>
+            <textarea rows="4" placeholder="Enter your address" required></textarea><br><br>
+
+            <label>Payment Method</label><br>
+
+            <input type="radio" name="payment" required> Cash on Delivery<br>
+            <input type="radio" name="payment"> UPI<br>
+            <input type="radio" name="payment"> Credit / Debit Card<br><br>
+
+            <a href="order-success.html" class="btn">
+    Place Order
+</a>
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Online Book Store | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
